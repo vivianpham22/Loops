@@ -24,7 +24,21 @@ namespace Loops
             //      Do something 
             // }
 
+            // for (int i = 0; i < 0; i++)
+            // {
+            //   Console.WriteLiine(i);     //       Console.WriteLine(i);
+            // }
 
+            //for (int i = 15; i > 0; i--)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //// Console.WriteLine("After the loops has run, I now have the value of " + i) <-- Example
+
+            for (int i = 100; i >= 50; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
