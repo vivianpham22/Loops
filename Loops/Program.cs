@@ -194,70 +194,95 @@ namespace Loops
 
 
             // Ask the user for the class they would like to add to their GPA calculation
-            string gpaCalc;
-            {
-                Console.WriteLine("Would you like to add to your GPA calculation? YES/NO");
-                gpaCalc = Console.ReadLine().ToUpper();
-            }
-            while (gpaCalc == "YES");
-            while (gpaCalc == "NO");
-
-
-
-            // Ask the user for the letter grade for the class (no + or - grades)
-            char[] grades = { 'A', 'B', 'C', 'D', 'F' };
-            string letterGrade;
-            {
-
-            }
-
-
+            // Ask the user for the letter grade for the class (no + or - grade)
             // Ask the user if they have another class they would like to add to their GPA calculation
-            string classAdded;
-            {
-                Console.WriteLine("Do you have another class you want to add to your GPA? YES/NO");
-            }
-
-           // Using a Do While Loop, repeat the code if the user says "YES"
+            // Using a Do While Loop, repeat the code if the user says "YES"
 
 
+            //string gpaCalc;
+            //do
+            //{
+            //    Console.WriteLine("Would you like to add a class to your GPA calculation? YES/NO");
+            //    gpaCalc = Console.ReadLine().ToLower();
 
+            //    string gpaCalc2;
+            //    Console.WriteLine("Name of class you want to add?");
+            //    gpaCalc2 = Console.ReadLine();
 
+            //    string letterGrade;
+            //    Console.WriteLine("Grade for class?");
+            //    letterGrade = Console.ReadLine();
 
-
-
-
-
-
-
-
-
-
-            //// Create an array of lucky numbers(just any numbers you like). Using a foreach loop, print the following:
-            //// If the array holds the numbers 3, 5, 7, 11, 15, then the printed result should say
-            //// Your Lucky Number is: 3
-            //// Your Lucky Number is: 5
-            //// Your Lucky Number is: 7
-            //// Your Lucky Number is: 11
-            //// Your Lucky Number is: 15
-
-        //int[] luckyNumbers = { 7, 8, 12, 16, 22};
-        //foreach (int numbers in luckyNumbers)   
-        //Console.WriteLine(numbers);
-
-        //switch (lucky);
-        //{ 
-        //case "3":
-        //    Console.WriteLine("This is your lucky number");
-        //        break;
-        //}
+            //}
+            //while (gpaCalc == "YES");
 
 
 
 
+            //// NESTED LOOPS
+            //// - loop inside a loop
+            //// - the inner loop is executed more times than the outer loop
+            //// REAL LIFE EXAMPLE: CLOCK 
+
+            //// Create a nested loop structure that prints:
+            //// 1234
+            //// 1234
+
+            //// How many rows and colums are there ?
+            //// 2 rows
+            //// 4 colums
+
+            //for (int rows = 1; rows <= 2; rows++)
+            //{
+            //    for (int colums = 1; colums <= 4; colums++)
+            //    {
+            //        Console.Write(colums);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+            //// Print a triangle
+            //// Outer loop will out line by line
+            //// Inner loop will over over the different elements 
+            //// Results
+            //// 1
+            //// 1 2
+            //// 1 2 3
+            //// 1 2 3 4 ....
+
+    
+            //for (int row = 1; row <= 4; row++)
+            //{
+            //    for (int colums = 1; colums <= row; colums++)
+            //    { 
+            //        Console.Write(colums);
+            //    }
+            //    Console.WriteLine();                        
+            //}
+
+            //// Another way 
+            //Console.WriteLine("How many rows do you want in your triangle?");
+            //int n = int.Parse(Console.ReadLine());
+            //for (int row = 1; row <= n; row++)
+            //{
+            //    for (int colums = 1; colums <= row; colums++)
+            //    {
+            //        Console.Write(colums + " ");
+            //    }
+            //        Console.WriteLine();  
+            //}
+                
 
 
 
-    }
+
+
+
+
+
+
+
+        }
     }
 }
