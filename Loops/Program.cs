@@ -144,24 +144,120 @@ namespace Loops
             //}
 
 
-            // WHILE LOOP 
-            // - used when you want a chunk of code to run only if a condition is met
-            // While something is TRUE, do this thing.
+            //// WHILE LOOP 
+            //// - used when you want a chunk of code to run only if a condition is met
+            //// - While something is TRUE, do this thing.
+            //// - infinit loop if condition is met
 
-            Console.WriteLine("What is your first name?");
-            string firstName = Console.ReadLine();
-            while (firstName.ToUpper() == "VIVIAN")
+            //Console.WriteLine("What is your first name?");
+            //string firstName = Console.ReadLine();
+            //while (firstName.ToUpper() == "VIVIAN")
+            //{
+            //    Console.WriteLine("Dude, you are amazing.");
+            //    break;
+            //}
+
+            //Console.WriteLine("Do you want to play this game? YES/NO");
+            //string playAgain = Console.ReadLine(); //.ToUpper();
+            //while (playAgain.ToUpper() == "YES")
+            //{
+            //    Console.WriteLine("It's a rematch!");
+            //    // break; 
+            //    Console.WriteLine("Do you want to play again? YES/NO");
+            //    playAgain = Console.ReadLine();
+            //}
+
+
+
+            //// DO - WHILE LOOP
+            //// - used when you want a chunk of code to run
+            //// - AT LEAST ONCE, but repeat only if the While Condition is met
+
+            //// do-while structure looks like this 
+
+            //// do
+            //// {
+            ////      Do something
+            //// }
+            //// while(condition);
+
+            //string playAgain;
+            //do
+            //{
+            //    Console.WriteLine("Welcome to the game!");
+            //    //let's pretend the code for the game is here
+            //    Console.WriteLine("Great game!");
+            //    Console.WriteLine("Do you want to play again? YES/NO");
+            //    playAgain = Console.ReadLine(); //.ToUpper();
+            //}
+            //while (playAgain == "YES");
+
+
+            // Ask the user for the class they would like to add to their GPA calculation
+            string gpaCalc;
             {
-                Console.WriteLine("Dude, you are amazing.");
-                break;
+                Console.WriteLine("Would you like to add to your GPA calculation? YES/NO");
+                gpaCalc = Console.ReadLine().ToUpper();
             }
-            
-            
-           
+            while (gpaCalc == "YES");
+            while (gpaCalc == "NO");
+
+
+
+            // Ask the user for the letter grade for the class (no + or - grades)
+            char[] grades = { 'A', 'B', 'C', 'D', 'F' };
+            string letterGrade;
+            {
+
+            }
+
+
+            // Ask the user if they have another class they would like to add to their GPA calculation
+            string classAdded;
+            {
+                Console.WriteLine("Do you have another class you want to add to your GPA? YES/NO");
+            }
+
+           // Using a Do While Loop, repeat the code if the user says "YES"
 
 
 
 
-        }
+
+
+
+
+
+
+
+
+
+
+            //// Create an array of lucky numbers(just any numbers you like). Using a foreach loop, print the following:
+            //// If the array holds the numbers 3, 5, 7, 11, 15, then the printed result should say
+            //// Your Lucky Number is: 3
+            //// Your Lucky Number is: 5
+            //// Your Lucky Number is: 7
+            //// Your Lucky Number is: 11
+            //// Your Lucky Number is: 15
+
+        //int[] luckyNumbers = { 7, 8, 12, 16, 22};
+        //foreach (int numbers in luckyNumbers)   
+        //Console.WriteLine(numbers);
+
+        //switch (lucky);
+        //{ 
+        //case "3":
+        //    Console.WriteLine("This is your lucky number");
+        //        break;
+        //}
+
+
+
+
+
+
+
+    }
     }
 }
