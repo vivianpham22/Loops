@@ -143,6 +143,20 @@ namespace Loops
             //    Console.WriteLine(artist);
             //}
 
+
+            // WHILE LOOP 
+            // - used when you want a chunk of code to run only if a condition is met
+            // While something is TRUE, do this thing.
+
+            Console.WriteLine("What is your first name?");
+            string firstName = Console.ReadLine();
+            while (firstName.ToUpper() == "VIVIAN")
+            {
+                Console.WriteLine("Dude, you are amazing.");
+                break;
+            }
+            
+            
            
 
 
