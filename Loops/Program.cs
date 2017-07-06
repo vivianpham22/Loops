@@ -112,7 +112,38 @@ namespace Loops
 
 
 
+            // Foreach loop 
+            // - used to iterate over a collection (ex. list or array)
+            // You can think the structure of a foreach loop as the statement:
+            // For each item in the collection, do something. 
 
+            //foreach (dataType variable in collection)
+            //{
+            //    do something
+            //}
+
+            //string[] firstMonths = { "Jan", "Feb", "Mar", "Apr", "May", "Jun" };
+            ////Always start with the keyword FOREACH
+            //foreach(string month in firstMonths)
+            //{
+            //    Console.WriteLine(month);
+            //}
+            // foreach loops allow the temporary variable to "know" to assign
+            // itself to each elemt in the collection (like an array), one at a time
+
+            // Foreach loop will always go from beginning to end, no matter what
+            // It counts the numbers of elements in the collection, and runs that many times
+
+            // Create an array of 6 musicians (band or solo artist)
+            // Using aa foreach loop, print musicans name
+
+            //string[] musicians = { "Alesso", "Hardwell", "Son Halo", "Dillon Francis", "Jason Aldean", "JBiebs" };
+            //foreach (string artist in musicians)
+            //{
+            //    Console.WriteLine(artist);
+            //}
+
+           
 
 
 
