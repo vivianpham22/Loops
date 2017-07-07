@@ -124,15 +124,16 @@ namespace Loops
 
             //string[] firstMonths = { "Jan", "Feb", "Mar", "Apr", "May", "Jun" };
             ////Always start with the keyword FOREACH
-            //foreach(string month in firstMonths)
+            //foreach (string month in firstMonths)
             //{
             //    Console.WriteLine(month);
             //}
-            // foreach loops allow the temporary variable to "know" to assign
-            // itself to each elemt in the collection (like an array), one at a time
 
-            // Foreach loop will always go from beginning to end, no matter what
-            // It counts the numbers of elements in the collection, and runs that many times
+            //foreach loops allow the temporary variable to "know" to assign
+            //itself to each elemt in the collection (like an array), one at a time
+
+            //Foreach loop will always go from beginning to end, no matter what
+            //It counts the numbers of elements in the collection, and runs that many times
 
             // Create an array of 6 musicians (band or solo artist)
             // Using aa foreach loop, print musicans name
@@ -228,7 +229,7 @@ namespace Loops
             //// 1234
             //// 1234
 
-            //// How many rows and colums are there ?
+            //// how many rows and colums are there ?
             //// 2 rows
             //// 4 colums
 
@@ -251,7 +252,7 @@ namespace Loops
             //// 1 2 3
             //// 1 2 3 4 ....
 
-    
+
             //for (int row = 1; row <= 4; row++)
             //{
             //    for (int colums = 1; colums <= row; colums++)
@@ -270,19 +271,172 @@ namespace Loops
             //    {
             //        Console.Write(colums + " ");
             //    }
-            //        Console.WriteLine();  
+            //    Console.WriteLine();
             //}
+
+
+            //=================================================================================
+            //=================================================================================
+            // Homework and practice problems 
+
+
+            //// Write a program that takes your favorite foods and prints them out one at a time. (Use a foreach loop.)
+            //string[] favFood = { "Nugz", "Pizza", "Fries", "Soup", "Pasta", };
+            //foreach(string food in favFood)
+            //{
+            //    Console.WriteLine(food);
+            //}
+
+
+
+
+            //// Create an array of lucky numbers(just any numbers you like). Using a foreach loop, print the following:
+            //// If the array holds the numbers 3, 5, 7, 11, 15, then the printed result should say
+            //// Your Lucky Number is: 3
+            //// Your Lucky Number is: 5
+            //// Your Lucky Number is: 7
+            //// Your Lucky Number is: 11
+            //// Your Lucky Number is: 15
+
+
+            //int[] luckyNumber = { 8, 12, 16, 22, 69 };
+            //foreach (int numbers in luckyNumber)
+            //{
+            //    Console.WriteLine(numbers);
+            //}
+
+
+            //// Ask the user if they would like to check the patient in for their their appointment
+            //// Using a While Loop, run the following sequence only if the user's answer is not YES
+            //// Print "PATIENT CHECK IN SYSTEM"
+            //// Ask the user for the client's full name
+            //// Ask the user for the client's 6-digit patient ID
+            //// Ask the user for the client's appointment time (i.e. 2:00 PM)
+
+            //string fullName;
+            //int sixDigits;
+            //int apptTime;
+            //Console.WriteLine("would you like to check in for your appointment? YEs/NO");
+            //string checkedIn = Console.ReadLine();
+            //while (checkedIn.ToUpper() == "YES")
+            //{
+            //    Console.WriteLine("patient check in system");
+            //    Console.WriteLine("please enter your full name.");
+            //    fullName = Console.ReadLine();
+
+            //    Console.WriteLine("what is your 6-digit patient id");
+            //    sixDigits = int.Parse(Console.ReadLine());
+
+            //    Console.WriteLine("what time is your appointment?");
+            //    apptTime = int.Parse(Console.ReadLine());
+            //}
+
+
+
+            //// Write a program that prints a multiplication table (5 x 5, for example) using a nested loops.
+            //int multNumb = 1;
+
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    for (int j = 1; j <= 10; j++)
+            //    {
+            //        Console.Write(multNumb * j + " ");
+            //    }
+            //    multNumb += 1;
+            //    Console.WriteLine();
+            //}
+
+
+            //// OR ANOTHER WAY
+
+            //int multNumb = 1;
+            //Console.WriteLine("Please enter your first number...");
+            //int firstNumber = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Please enter your second number...");
+            //int secondNumber = int.Parse(Console.ReadLine());
+
+            //for (int i = 1; i <= firstNumber; i++)
+            //{
+            //    for (int j = 1; j <= secondNumber; j++)
+            //    {
+            //        Console.Write(multNumb * j + " ");
+            //    }
+            //    multNumb += 1;
+            //    Console.WriteLine();
+            //}
+
+
+
+
+            //// Create an array of your favorite movies.
+            //// Print out each movie in the list, unless the move starts with a vowel. 
+            //// Hint: Research.startsWith()
+
+            //string[] favMovie = { "Mean Girls", "White Chicks", "We Are Your Friends", "The Lucky One", "Apple" };
+            //foreach (string movie in favMovie)
+            //{
+            //    if (movie.StartsWith("A"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("A"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("I"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("O"))
+            //    {
+            //        continue;
+            //    }
+            //    else if (movie.StartsWith("U"))
+            //    {
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(movie);
+            //    }
+            //}
+
+
+
+
+            // Write a console application that asks the user for an integer.
+            // If that integer is evenly divisible by 3, then write “You Won!” If it isn’t, write “You Lost.”  
+            // Keep asking them for a number (looping) until they win.
+
+            //int wholeNumber;
+
+            //Console.WriteLine("Type in any whole number");
+            //wholeNumber = int.Parse(Console.ReadLine());
+
+
+
+
+
+
+            //// Counting to 10 example with FOR
+            //for (int i = 1; i <= 10; i++ )
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //// Counting to 10 example with WHILE
+            //int counter = 1;
+
+            //while(counter <= 10)
+            //{
+            //    Console.WriteLine(counter);
+            //    counter += 1;
                 
+            //}
+               
+            
+             
 
-
-
-
-
-
-
-
-
-
+            }
         }
     }
-}
