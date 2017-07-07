@@ -282,11 +282,10 @@ namespace Loops
 
             //// Write a program that takes your favorite foods and prints them out one at a time. (Use a foreach loop.)
             //string[] favFood = { "Nugz", "Pizza", "Fries", "Soup", "Pasta", };
-            //foreach(string food in favFood)
+            //foreach (string food in favFood)
             //{
             //    Console.WriteLine(food);
             //}
-
 
 
 
@@ -302,8 +301,10 @@ namespace Loops
             //int[] luckyNumber = { 8, 12, 16, 22, 69 };
             //foreach (int numbers in luckyNumber)
             //{
-            //    Console.WriteLine(numbers);
+            //    Console.WriteLine("This is your lucky numer:" + numbers);
             //}
+
+
 
 
             //// Ask the user if they would like to check the patient in for their their appointment
@@ -408,14 +409,56 @@ namespace Loops
             // If that integer is evenly divisible by 3, then write “You Won!” If it isn’t, write “You Lost.”  
             // Keep asking them for a number (looping) until they win.
 
-            //int wholeNumber;
+            // 1. get in a user input; ask for integer
+            // 2. "evenly divisible" is a good indicator of modulus ( % )
+            // 3. check if input % 3 == 0
+            // 4. need conditional and if input % 3 == 0 , need to write "YOU WON!"
+            // 5. then exit loop.
+            // 6. if input is % 3 is not equal to 0 , need to write "YOU LOST!"
+            // 7. ask for another intger. repeat until they win
 
             //Console.WriteLine("Type in any whole number");
-            //wholeNumber = int.Parse(Console.ReadLine());
+            //int wholeNumber = int.Parse(Console.ReadLine());
+            //for (int i = 1; i <= wholeNumber; i++)
+            //{
+            //    if (i % 3 == 0)
+            //    {
+            //        Console.WriteLine("YOU WON!");
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("YOU LOST");
+            //        Console.WriteLine("Please enter another whole number..");
+            //        wholeNumber = int.Parse(Console.ReadLine());
+            //    }
+            //}
+
+            //// OR ANOTHER WAY
+
+            //Console.WriteLine("Type in any whole number");
+            //int wholeNumber = int.Parse(Console.ReadLine());
+            //while (wholeNumber % 3 != 0)
+            //{
+            //    Console.WriteLine("YOU LOST!");
+            //    Console.WriteLine("Please enter another number");
+            //    wholeNumber = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine("YOU WON!");
 
 
 
 
+
+            // Write a console application that asks for the user for a word or phrase
+            // Print the number of each vowel in that word to the console.
+            // Output; "Your phrase has ___ A's"
+            //         "Your phrase has ___ E's"
+            //          ETC......
+
+
+
+        
 
 
             //// Counting to 10 example with FOR
@@ -431,12 +474,12 @@ namespace Loops
             //{
             //    Console.WriteLine(counter);
             //    counter += 1;
-                
-            //}
-               
-            
-             
 
-            }
+            //}
+
+
+
+
         }
     }
+ }
